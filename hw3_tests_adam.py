@@ -1,5 +1,5 @@
-import hw3_part1_adam
-import hw3_part2_adam
+import hw3_part1
+import hw3_part2
 
 
 def print_wrong_output(test, expected, test_num):
@@ -8,21 +8,21 @@ def print_wrong_output(test, expected, test_num):
     print("Expected Result: " + str(expected) + "\n")
 
 
-test1 = hw3_part1_adam.find_best_selling_product("hw3_part1_tests_files/items1.txt")
+test1 = hw3_part1.find_best_selling_product("hw3_part1_tests_files/items1.txt")
 test1_expected_result = ('baloon', 14)
-test2 = hw3_part1_adam.find_k_most_expensive_products("hw3_part1_tests_files/items1.txt", 3)
+test2 = hw3_part1.find_k_most_expensive_products("hw3_part1_tests_files/items1.txt", 3)
 test2_expected_result = ['chair', 'lamp', 'pizza']
-test3 = hw3_part1_adam.find_best_selling_product("hw3_part1_tests_files/items2.txt")
+test3 = hw3_part1.find_best_selling_product("hw3_part1_tests_files/items2.txt")
 test3_expected_result = ('pineapple', 29)
-test4 = hw3_part1_adam.find_k_most_expensive_products("hw3_part1_tests_files/items2.txt", 3)
+test4 = hw3_part1.find_k_most_expensive_products("hw3_part1_tests_files/items2.txt", 3)
 test4_expected_result = ['banana', 'pineapple', 'bike']
-test5 = hw3_part1_adam.find_best_selling_product("hw3_part1_tests_files/items3.txt")
+test5 = hw3_part1.find_best_selling_product("hw3_part1_tests_files/items3.txt")
 test5_expected_result = ('apple', 19)
-test6 = hw3_part1_adam.find_k_most_expensive_products("hw3_part1_tests_files/items3.txt", 7)
+test6 = hw3_part1.find_k_most_expensive_products("hw3_part1_tests_files/items3.txt", 7)
 test6_expected_result = ['apple', 'banana', 'bike', 'chair', 'lamp', 'phone', 'pineapple']
-test7 = hw3_part1_adam.find_best_selling_product("hw3_part1_tests_files/items4.txt")
+test7 = hw3_part1.find_best_selling_product("hw3_part1_tests_files/items4.txt")
 test7_expected_result = ('pizza', 51)
-test8 = hw3_part1_adam.find_k_most_expensive_products("hw3_part1_tests_files/items4.txt", 7)
+test8 = hw3_part1.find_k_most_expensive_products("hw3_part1_tests_files/items4.txt", 7)
 test8_expected_result = ['apple', 'baloon', 'pizza', 'bike', 'pineapple', 'phone', 'chair']
 
 results = [
@@ -105,7 +105,7 @@ tests2 = {
 
 count_tests1 = 0
 for test, expected_result in tests1.items():
-    result = hw3_part2_adam.get_palindromic_dict(test)
+    result = hw3_part2.get_palindrom_dict(test)
     if result == expected_result:
         print("Passed test for str: " + test)
         count_tests1 += 1
@@ -124,7 +124,7 @@ print("\n\n")
 
 count_tests2 = 0
 for test, expected_result in tests2.items():
-    result = hw3_part2_adam.match_str(test)
+    result = hw3_part2.check_match(test)
     if result == expected_result:
         print("Passed test for str: " + test)
         count_tests2 += 1
